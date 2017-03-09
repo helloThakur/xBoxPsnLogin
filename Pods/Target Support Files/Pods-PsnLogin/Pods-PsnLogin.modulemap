@@ -1,0 +1,6 @@
+framework module Pods_PsnLogin {
+  umbrella header "Pods-PsnLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
