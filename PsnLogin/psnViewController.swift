@@ -129,7 +129,8 @@ class psnViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func closeWebView () {
-        
+        self.dismiss(animated: true) {
+        }
     }
 }
 

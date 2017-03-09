@@ -19,6 +19,7 @@ class xBoxViewController: UIViewController, WKNavigationDelegate {
     var accessToken: String?
     var refreshToken: String?
     
+    @IBOutlet weak var closeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,8 @@ class xBoxViewController: UIViewController, WKNavigationDelegate {
         let url = URL(string: psnUrl)!
         let mutRequest = NSMutableURLRequest.init(url: url)
         webView.load(mutRequest as URLRequest)
+        
+        self.view.bringSubview(toFront: closeButton)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -87,6 +90,11 @@ class xBoxViewController: UIViewController, WKNavigationDelegate {
                 print(error)
             }
             
+        }
+    }
+    
+    @IBAction func closeWebView () {
+        self.dismiss(animated: true) {
         }
     }
 }

@@ -25,7 +25,7 @@
                                 <rect key="frame" x="130" y="318.5" width="114" height="30"/>
                                 <state key="normal" title="           PSN          "/>
                                 <connections>
-                                    <segue destination="gBp-6V-eeY" kind="show" id="J6j-tZ-9vo"/>
+                                    <segue destination="gBp-6V-eeY" kind="show" id="BA1-YC-SAf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQD-53-P3n">
@@ -65,20 +65,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI9-Xy-AJy">
-                                <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uMh-LF-2rE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeWebView" destination="gBp-6V-eeY" eventType="touchUpInside" id="nDv-3k-XaW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sI9-Xy-AJy" firstAttribute="leading" secondItem="gG1-5l-B1U" secondAttribute="leading" id="9Jt-4R-fLF"/>
-                            <constraint firstItem="sI9-Xy-AJy" firstAttribute="top" secondItem="gG1-5l-B1U" secondAttribute="top" id="git-1E-Tfj"/>
+                            <constraint firstItem="Bse-Wb-tq5" firstAttribute="top" secondItem="sI9-Xy-AJy" secondAttribute="bottom" id="SMG-hd-k6j"/>
+                            <constraint firstItem="sI9-Xy-AJy" firstAttribute="leading" secondItem="gG1-5l-B1U" secondAttribute="leading" id="Yur-t6-d0o"/>
+                            <constraint firstAttribute="trailing" secondItem="sI9-Xy-AJy" secondAttribute="trailing" id="uek-IZ-Jo5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="sI9-Xy-AJy" id="Iwz-jZ-saV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWH-Fw-39t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="164"/>
+            <point key="canvasLocation" x="-7" y="126"/>
         </scene>
         <!--Psn View Controller-->
         <scene sceneID="o9h-eN-wCL">
@@ -93,20 +107,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4N1-2v-fJw">
-                                <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="apk-6U-0W1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeWebView" destination="xYL-lq-cX0" eventType="touchUpInside" id="rqq-Pb-uI3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4N1-2v-fJw" firstAttribute="leading" secondItem="U2Y-co-vxW" secondAttribute="leading" id="hFH-ed-TG9"/>
-                            <constraint firstItem="4N1-2v-fJw" firstAttribute="top" secondItem="U2Y-co-vxW" secondAttribute="top" id="hT1-RA-za0"/>
+                            <constraint firstAttribute="trailing" secondItem="4N1-2v-fJw" secondAttribute="trailing" id="Klj-Cy-GnN"/>
+                            <constraint firstItem="Nx4-Dt-MmZ" firstAttribute="top" secondItem="4N1-2v-fJw" secondAttribute="bottom" id="cTF-a8-GXE"/>
+                            <constraint firstItem="4N1-2v-fJw" firstAttribute="leading" secondItem="U2Y-co-vxW" secondAttribute="leading" id="zCC-Pz-Mlg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="4N1-2v-fJw" id="fgm-Do-nEV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgV-43-zi5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="843"/>
+            <point key="canvasLocation" x="-7.2000000000000002" y="842.42878560719646"/>
         </scene>
     </scenes>
 </document>
