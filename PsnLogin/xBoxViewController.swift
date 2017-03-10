@@ -94,7 +94,8 @@ class xBoxViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func closeWebView () {
-        self.dismiss(animated: true) {
+        self.dismiss(animated: true) { 
+            
         }
     }
 }

@@ -25,7 +25,7 @@
                                 <rect key="frame" x="130" y="318.5" width="114" height="30"/>
                                 <state key="normal" title="           PSN          "/>
                                 <connections>
-                                    <segue destination="gBp-6V-eeY" kind="show" id="BA1-YC-SAf"/>
+                                    <segue destination="xYL-lq-cX0" kind="showDetail" id="fq0-t6-tb9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQD-53-P3n">
@@ -35,7 +35,7 @@
                                 </constraints>
                                 <state key="normal" title="xBox"/>
                                 <connections>
-                                    <segue destination="xYL-lq-cX0" kind="show" id="8Hd-SU-fLc"/>
+                                    <segue destination="gBp-6V-eeY" kind="showDetail" id="bgl-lS-OTz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWH-Fw-39t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="126"/>
+            <point key="canvasLocation" x="62" y="810"/>
         </scene>
         <!--Psn View Controller-->
         <scene sceneID="o9h-eN-wCL">
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgV-43-zi5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2000000000000002" y="842.42878560719646"/>
+            <point key="canvasLocation" x="63" y="152"/>
         </scene>
     </scenes>
 </document>
