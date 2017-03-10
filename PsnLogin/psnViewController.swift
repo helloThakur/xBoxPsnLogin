@@ -3,7 +3,6 @@
 //  PsnLogin
 //
 //  Created by Ashutosh on 2/20/17.
-//  Copyright © 2017 Verizon. All rights reserved.
 //
 
 import UIKit
